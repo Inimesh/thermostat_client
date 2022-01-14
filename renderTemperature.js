@@ -1,6 +1,10 @@
-
-const renderTemperature = (temperature) => {
+const renderTemperature = (data) => {
   const temp = data.temperature;
-  temperatureDisplayEl = document.getElementById('temp');
-  temperatureDisplayEl.appendChild(document.createTextNode(temp));
+  const temperatureDisplayEl = document.getElementById('temp');
+
+  temperatureDisplayEl.innerText = '' // Clear current displayed temp off screen
+
+  temperatureDisplayEl.appendChild(document.createTextNode(temp)); // display new temperature
 }
+
+export { renderTemperature };
