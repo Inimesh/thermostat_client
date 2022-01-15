@@ -6,7 +6,7 @@ import { increaseTemperature } from "./increaseTemperature.js";
 import { decreaseTemperature } from "./decreaseTemperature.js";
 import { resetTemperature } from "./resetTemperature.js";
 
-fetchTemperature((temperature) => {
+fetchTemperature.then(temperature => {
   renderTemperature(temperature)
 });
 

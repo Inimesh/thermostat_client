@@ -1,11 +1,11 @@
-const fetchTemperature = (callback) => {
+const fetchTemperature = new Promise((resolve, reject) => {
   fetch('http://localhost:3000/temperature')
   .then(response => {
     return response.json()
   })
   .then(data => {
-    callback(data)
+    resolve(data)
   })
-};
+});
 
 export { fetchTemperature };
