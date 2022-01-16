@@ -1,5 +1,3 @@
-// TODO Refactor callbacks into promises! (Learn how to create custom promise objects!)
-
 import { fetchTemperature } from './fetchTemperature.js';
 import { renderTemperature } from "./renderTemperature.js";
 import { increaseTemperature } from "./increaseTemperature.js";
